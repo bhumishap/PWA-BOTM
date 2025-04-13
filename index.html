@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of the Month</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
+  </script>
+  
+<body>
+    <header>
+        <div class="header-container">
+            <img src="media/logo.png" alt="Book of the Month Logo" class="logo">
+            <h1>Book of the Month</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#current-products">Current Products</a></li>
+            <li><a href="#all-products">All Products</a></li>
+            <li><a href="#about-book-of-the-month">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Genres</a>
+                <div class="dropdown-content">
+                    <a href="#thriller">Thriller</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#fantasy">Fantasy</a>
+                    <a href="#non-fiction">Non-Fiction</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="background-video-section">
+        <video autoplay muted loop class="background-video">
+            <source src="bgvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="description-section">
+        <div class="description-text">
+            <h2>About Book of the Month</h2>
+            <p>
+                Welcome to Book of the Month, your go-to destination for discovering exceptional books. We curate a selection of the best new reads, offering you access to titles that ignite imagination and spark conversation. Whether you’re a thriller enthusiast, romance aficionado, or in search of something unique, we have a book for you.
+
+                Our collection features the latest bestsellers, award-winning novels, and hidden gems from emerging authors. From gripping thrillers and heartwarming romances to enchanting fantasies and enlightening non-fiction, we ensure a diverse range of genres to suit every taste.
+                
+                Subscribe today and enjoy the convenience of having your next favorite book delivered right to your doorstep. Join our community of book lovers and embark on a journey through some of the finest literature available.            </p>
+        </div>
+        <div class="description-image">
+            <img src="media/download.jpeg" alt="Books Image">
+        </div>
+    </section>
+
+    <section class="book-images" id="current-products">
+        <h2>Our Top Picks This Month</h2>
+        <div class="scrolling-images">
+            <img src="madwoman.png" alt="Madwoman">
+            <img src="media/blue.png" alt="Blue Sisters">
+            <img src="media/lastparty.png" alt="The Last Party">
+            <img src="media/bunny.png" alt="Bunny">
+            <img src="media/tmrw.png" alt="Tomorrow, and Tomorrow, and Tomorrow">
+            <img src="media/margo.png" alt="Margo's Got Money Troubles">
+        </div>
+    </section>
+
+    <section class="genres-section">
+        <h2>Explore by Genre</h2>
+    
+        <div id="thriller">
+            <h3>Thriller</h3>
+            <div class="genre-image" style="background-image: url('media/thriller.png');"></div>
+        </div>
+    
+        <div id="romance">
+            <h3>Romance</h3>
+            <div class="genre-image" style="background-image: url('media/romance.png');"></div>
+        </div>
+    
+        <div id="fantasy">
+            <h3>Fantasy</h3>
+            <div class="genre-image" style="background-image: url('media/fantasy.png');"></div>
+        </div>
+    
+        <div id="non-fiction">
+            <h3>Non-Fiction</h3>
+            <div class="genre-image" style="background-image: url('media/nonfiction.png');"></div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Company Name:</strong> Book of the Month Co.</p>
+            <p><strong>Email:</strong> bookofthemonth@gmail.com</p>
+            <p><strong>Phone:</strong> (+91) 9959954938</p>
+            <p>&copy; 2024 Book of the Month. All rights reserved.</p>
+        </div>
+        <p>Follow us on:</p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
