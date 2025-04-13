@@ -2,7 +2,7 @@
   "name": "Book of the Month",
   "short_name": "BookOfMonth",
   "description": "Discover the best new reads and explore your favorite genres with Book of the Month.",
-  "start_url": "/",
+  "start_url": "/index",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#8B5CF6",
